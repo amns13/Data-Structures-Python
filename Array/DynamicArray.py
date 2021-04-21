@@ -1,12 +1,16 @@
 import ctypes
 
 
-MIN_CAPACITY = 16
+MIN_CAPACITY = 16   # Minimum Capacity
 GROWTH_FACTOR = 2
 SHRINK_FACTOR = 4
 
 
 class DynamicArray:
+    '''
+    Implementation of a Dynamic Array.
+    List.
+    '''
     
     def __init__(self):
         self._n = 0
@@ -136,6 +140,11 @@ def main():
     print('Length: ', len(a))
     print(a)
     print('Capacity: ', a._capacity)
+
+    for i in range(len(a)):
+        print(a[i], end=' -> ')
+    print()
+
 
 if __name__ == '__main__':
     main()
